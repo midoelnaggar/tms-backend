@@ -1,29 +1,29 @@
 {
-    "compileOnSave": false,
-    "compilerOptions": {
-      "skipLibCheck": true,
-      "strict": true,
-      "noFallthroughCasesInSwitch": true,
-      "isolatedModules": true,
-      "target": "es2022",
-      "lib": ["es2022"],
-      "typeRoots": ["node_modules/@types"],
-      "allowSyntheticDefaultImports": true,
-      "experimentalDecorators": true,
-      "emitDecoratorMetadata": true,
-      "forceConsistentCasingInFileNames": true,
-      "moduleResolution": "node",
-      "module": "CommonJS",
-      "pretty": true,
-      "sourceMap": true,
-      "outDir": "dist",
-      "allowJs": true,
-      "noEmit": false,
-      "esModuleInterop": true,
-      "resolveJsonModule": true,
-      "importHelpers": true
-    },
-    "include": ["./"],
-    "exclude": ["node_modules", "./dist/**/*"]
-  }
+  "compileOnSave": false,
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "target": "es2022",
+    "lib": ["es2022"],
+    "typeRoots": ["node_modules/@types"],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "module": "CommonJS",
+    "pretty": true,
+    "sourceMap": true,
+    "outDir": "api",
+    "allowJs": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "importHelpers": true
+  },
+  "include": ["./"],
+  "exclude": ["node_modules", "./api/**/*"]
+}
   
