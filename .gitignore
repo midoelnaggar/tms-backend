@@ -1,4 +1,6 @@
 dist/
+api/
 node_modules/
 .env
 .env.*
+.vercel
