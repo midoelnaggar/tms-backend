@@ -49,7 +49,7 @@ export const login = async (req: LoginRequest, res: Response, next: NextFunction
                 if (await comparePassword(password, userWithTheSameEmail.password)) {
                     const { id, name, email } = userWithTheSameEmail;
                     const token = generateToken(id);
-                    res.status(201).json({
+                    res.status(200).json({
                         id,
                         name,
                         email,

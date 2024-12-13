@@ -14,8 +14,8 @@ app.use(express.urlencoded({ extended: true }));
 
 const apiRouter = express.Router();
 app.use("/api", apiRouter);
-apiRouter.use("/user", userRouter);
-apiRouter.use("/task", taskRouter);
+apiRouter.use("/users", userRouter);
+apiRouter.use("/tasks", taskRouter);
 app.use((err: AppError, _req: Request, res: Response, _next: NextFunction) => {
     const statusCode = err.statusCode || 500;
     const message = err.message || 'Internal Server Error';

@@ -17,10 +17,11 @@ export const userTasks = async (userId: string) => {
     return createdTask;
 }
 
-export const updateTaskCompilation = async (id: string, isCompleted: boolean) => {
+export const updateTaskStatus = async (id: string, userId: string, isCompleted: boolean) => {
     const updatedTask = await prisma.task.update({
         where: {
-            id
+            id,
+            userId
         },
         data: {
             completed: isCompleted
@@ -29,10 +30,11 @@ export const updateTaskCompilation = async (id: string, isCompleted: boolean) =>
     return updatedTask;
 }
 
-export const deleteTask = async (id: string) => {
+export const deleteTask = async (id: string, userId: string) => {
     const deletedTask = await prisma.task.delete({
         where: {
-            id
+            id,
+            userId
         }
     })
     return deletedTask;

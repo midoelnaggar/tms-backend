@@ -22,17 +22,16 @@ export interface CreateTaskRequest extends Request {
     },
 }
 
-export interface UserTasksRequest extends Request {
-    params: {
-        userId: string;
-    }
-}
-
-export interface UpdateTaskCompilationRequest extends Request {
+export interface UpdateTaskStatusRequest extends Request {
     params: {
         id: string;
     },
     body: {
         isCompleted: boolean;
     },
+}
+export interface DeleteTaskRequest extends Request {
+    params: {
+        id: string;
+    }
 }
